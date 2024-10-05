@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="profile.jpg" alt="Payal Vidate">
+            <p>Let's explore my work and experience together!</p>
+            <button class="cta-button">Learn More About Me</button>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I am <strong>Payal Vidhate</strong>, an MCA student with a passion for software development and a keen interest in crafting seamless digital experiences. Currently, I am gaining hands-on experience through multiple internships in <strong>Web Development</strong> and <strong>Android App Development</strong>.</p>
+                
+                <p>I have the opportunity to work with diverse teams at <strong>Oasis Infobyte, Cognifyz,</strong> and <strong>CodeClause</strong>, where I am developing innovative solutions and enhancing my skills in Java, JavaScript, HTML, CSS, and Android development. I am committed to leveraging my knowledge to solve real-world problems and create impactful software.</p>
+            
+                <p>My journey is driven by a curiosity for learning new technologies and a determination to grow as a developer. When I'm not coding, you can find me exploring new tech trends, experimenting with creative designs, or engaging with the developer community.</p>
+                
+                <p>Let's connect and build something amazing together!</p>
+            </section>
+        </div>
+    </header>
+    
+ <!-- About Me Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>More About Me</h2>
+        <p>I am Payal Vidhate, an aspiring Software Developer and an MCA student with a strong passion for web and mobile app development. I have experience working on various projects, including web development, Android app development, and software design. Currently, I'm honing my skills through internships at Oasis Infobyte, Cognifyz, and CodeClause.
+                Besides my technical skills, I am a proactive team player and enjoy collaborating with others to build meaningful projects. In my spare time, I explore new technologies, work on personal development through various online courses, and participate in tech communities.</p>
+        
+        </div>
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <p>Here is a glimpse of my technical expertise:</p>
+        <div class="skill-set">
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programming Languages</h3>
+                <p>HTML, CSS, JavaScript, Java, C, C++, Kotlin/Android, Python</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Frameworks & Tools</h3>
+                <p>Android Studio, Visual Studio Code, Eclipse, PyCharm,Jupyter</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Databases</h3>
+                <p>MySQL, SQLite, PHP, NoSQL</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Specialties</h3>
+                <p>Full Stack Development, Android Development, UI/UX Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Goals Section -->
+<section id="goals" class="goals">
+    <div class="container">
+        <h2>My Goals</h2>
+        <p>I am focused on achieving the following objectives:</p>
+        <ul>
+            <li>Continuously learn and improve my technical skills in web and mobile app development.</li>
+            <li>Contribute to innovative projects that solve real-world problems.</li>
+            <li>Build user-friendly applications that provide a great user experience.</li>
+            <li>Collaborate with talented professionals to enhance my knowledge and skills.</li>
+        </ul>
+        <button id="subscribeBtn" class="btn">Subscribe for Updates</button>
+        <div id="subscribeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Subscribe to My Updates</h3>
+                <form id="subscribeForm">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've been working on:</p>
+        <div class="project-list">
+            <!-- Project 1: Popcorn Pass -->
+            <div class="project-item" onclick="showProjectDetails('popcorn')">
+                <h3>Popcorn Pass</h3>
+                <p>An online ticket booking system similar to Book My Show, developed using Java and Android.</p>
+                <button class="details-button">View Details</button>
+            </div>
+
+            <!-- Project 2: P Zara -->
+            <div class="project-item" onclick="showProjectDetails('pzara')">
+                <h3>P Zara</h3>
+                <p>A landing page for beauty products, showcasing featured items, user reviews, and a subscription form, built with HTML, CSS, and JavaScript.</p>
+                <button class="details-button">View Details</button>
+            </div>
+
+            <!-- Project 3: Bloomtown -->
+            <div class="project-item" onclick="showProjectDetails('bloomtown')">
+                <h3>Bloomtown</h3>
+                <p>An online flower shop management system, developed using HTML, CSS, PHP, MySQL, and JavaScript.</p>
+                <button class="details-button">View Details</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Project Details -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="projectDetails"></div>
+    </div>
+</div>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <div id="formFeedback" class="form-feedback"></div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Payal Vidhate. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/payal-vidhate-027290274" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/PayalV09" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <button id="backToTop" class="back-to-top">Back to Top</button>
+    </div>
+</footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
